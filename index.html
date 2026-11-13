@@ -162,8 +162,8 @@ grant execute on function public.mkss_recover(text,text) to anon;
 <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
 <script>
 /* EDIT THESE TWO PUBLIC VALUES before deploying. NEVER use a service_role key. */
-const SUPABASE_URL='PASTE_YOUR_SUPABASE_PROJECT_URL';
-const SUPABASE_KEY='PASTE_YOUR_SUPABASE_ANON_OR_PUBLISHABLE_KEY';
+const SUPABASE_URL='https://wtoqqffpaujprsvykdfi.supabase.co';
+const SUPABASE_KEY='sb_publishable_NWX-wAhjo7WlZqojpmKa1Q_MV8E2Cjd';
 const CONFIGURED=/^https:\/\/.+\.supabase\.co$/.test(SUPABASE_URL)&&SUPABASE_KEY.length>25;
 const db=CONFIGURED?window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY,{auth:{persistSession:true,autoRefreshToken:true}}):null;
 const $=id=>document.getElementById(id);
